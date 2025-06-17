@@ -3488,6 +3488,7 @@ V8 options that are allowed are:
 * `--expose-gc`
 * `--interpreted-frames-native-stack`
 * `--jitless`
+* `--max-heap-size`
 * `--max-old-space-size`
 * `--max-semi-space-size`
 * `--perf-basic-prof-only-functions`
@@ -3829,6 +3830,11 @@ documented here:
 ### `--interpreted-frames-native-stack`
 
 ### `--jitless`
+
+### `--max-heap-size=SIZE` (in MiB)
+
+Sets the max memory size of V8's heap. V8 will compute the max size of both
+young (semi space) and old (old space) generation sections based on this limit.
 
 <!-- Anchor to make sure old links find a target -->
 
